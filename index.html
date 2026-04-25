@@ -32,45 +32,44 @@
 
     nav a {
       color: #38bdf8;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: 600;
     }
 
-    /* SECTIONS */
+    /* SECTION */
     section {
-      padding: 60px 40px;
-      max-width: 1000px;
+      padding: 50px 30px;
+      max-width: 900px;
       margin: auto;
     }
 
     /* HEADINGS */
     h2 {
       text-align: center;
-      font-size: 30px;
-      margin-bottom: 20px;
-      background: linear-gradient(90deg, #38bdf8, #818cf8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      margin-bottom: 15px;
+      position: relative;
     }
 
     h2::after {
       content: "";
       display: block;
-      width: 60px;
+      width: 50px;
       height: 3px;
       background: #38bdf8;
-      margin: 10px auto;
+      margin: 8px auto;
+      border-radius: 2px;
     }
 
     /* HERO */
     #home {
       text-align: center;
-      padding-top: 100px;
+      padding-top: 90px;
     }
 
     .hero-title {
-      font-size: 48px;
+      font-size: 42px;
       font-weight: 800;
       background: linear-gradient(90deg, #38bdf8, #818cf8);
       -webkit-background-clip: text;
@@ -80,42 +79,60 @@
     /* STATS */
     .stats-container {
       display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      gap: 20px;
+      justify-content: center;
+      gap: 15px;
     }
 
     .stat-box {
       background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      width: 120px;
+      padding: 12px;
+      border-radius: 8px;
+      width: 100px;
+      text-align: center;
     }
 
     .stat-box h2 {
+      font-size: 20px;
       margin: 0;
-      font-size: 28px;
       color: #38bdf8;
-      -webkit-text-fill-color: unset;
+    }
+
+    .stat-box p {
+      font-size: 13px;
+      margin: 3px 0 0;
     }
 
     /* ABOUT */
     .about-container {
       max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
     }
 
-    .about-container p {
-      line-height: 1.8;
+    /* SKILLS GRID */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
-    /* PROJECTS GRID */
+    .skill-box {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 6px;
+      border-left: 3px solid #38bdf8;
+      font-size: 14px;
+    }
+
+    /* PROJECTS */
     .projects-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 15px;
     }
 
-    /* CARD */
     .card {
       background: #1e293b;
       padding: 15px;
@@ -125,18 +142,30 @@
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
     }
 
-    /* CERTIFICATIONS GRID */
-    #certifications {
+    /* CERTIFICATIONS */
+    .cert-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .cert-box {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 6px;
+      border-left: 3px solid #38bdf8;
+      font-size: 14px;
+      width: 250px;
       text-align: center;
     }
 
-    #certifications .card {
-      display: inline-block;
-      width: 250px;
-      margin: 10px;
+    /* CONTACT */
+    #contact {
+      text-align: center;
     }
 
   </style>
@@ -161,7 +190,7 @@
 </section>
 
 <!-- STATS -->
-<section id="stats">
+<section>
   <div class="stats-container">
     <div class="stat-box">
       <h2>8.89</h2>
@@ -183,9 +212,11 @@
   <h2>About Me</h2>
   <div class="about-container">
     <p>
-      I'm a B.Tech CSE student at BV Raju Institute of Technology, passionate about building intelligent and user-friendly web applications.
-      With a strong academic record (CGPA 8.89/10) and hands-on experience in full-stack development and AI, I love turning complex ideas into clean, working products.
+      I'm a B.Tech CSE student passionate about building intelligent and user-friendly applications.
+      at BV Raju Institute of Technology, passionate about building intelligent and user-friendly web applications.
+      With a strong academic record (CGPA 8.89/10) and hands-on experience in full-stack development and AI,
       Beyond coding, I enjoy competitive programming, exploring emerging technologies, and expressing creativity through mandala art.
+      I've participated in national-level technical events, sharpening both my problem-solving and presentation skills.
     </p>
   </div>
 </section>
@@ -193,7 +224,17 @@
 <!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
-  <p>Python, C, C++, UI/UX, Figma, AI/ML, Team Management</p>
+
+  <div class="skills-container">
+    <div class="skill-box">Python</div>
+    <div class="skill-box">C</div>
+    <div class="skill-box">C++</div>
+    <div class="skill-box">UI/UX</div>
+    <div class="skill-box">Figma</div>
+    <div class="skill-box">AI/ML</div>
+    <div class="skill-box">Team Management</div>
+  </div>
+
 </section>
 
 <!-- PROJECTS -->
@@ -213,7 +254,7 @@
 
     <div class="card">
       <h3>AI Disaster Response Hub</h3>
-      <p>ML-based disaster prediction and rescue planning</p>
+      <p>ML-based disaster prediction</p>
     </div>
   </div>
 
@@ -223,17 +264,23 @@
 <section id="certifications">
   <h2>Certifications</h2>
 
-  <div class="card">Google UX Design Certificate</div>
-  <div class="card">Salesforce Certified Agentforce Specialist</div>
-  <div class="card">Microsoft Certified: Azure AI Fundamentals</div>
+  <div class="cert-container">
+    <div class="cert-box">Google UX Design Certificate</div>
+    <div class="cert-box">Salesforce Agentforce Specialist</div>
+    <div class="cert-box">Microsoft Azure AI Fundamentals</div>
+    <div class="cert-box">Advanced Programming in C++ Certificate</div>
+    <div class="cert-box">Artificial Intelligence Primer Certification</div>
+    
+    
+  </div>
 
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>Mobile: 7659025551</p>
-  <p>Email: laasyagongula@gmail.com</p>
+  <p>📞 7659025551</p>
+  <p>📧 laasyagongula@gmail.com</p>
 </section>
 
 </body>
