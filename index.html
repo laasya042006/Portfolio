@@ -3,113 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <title>Laasya Reddy Portfolio</title>
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      <nav style="position: fixed; top: 0; width: 100%; background: #020617; padding: 15px; text-align: right;">
-  <a href="#about">ABOUT</a>
-  <a href="#skills">SKILLS</a>
-  <a href="#projects">PROJECTS</a>
-  <a href="#certifications">CERTS</a>
-  <a href="#contact">CONTACT</a>
-</nav>
-      <section id="about">
-  <h2>About Me</h2>
-  <p>...</p>
-</section>
-      <section id="skills">
-  <h2>Skills</h2>
-</section>
-      <section id="projects">
-  <h2>Projects</h2>
-</section>
-      <section id="certifications">
-  <h2>Certifications</h2>
-</section>
-      <section id="contact">
-  <h2>Contact</h2>
-</section>
-      html {
-  scroll-behavior: smooth;
-}
-      section {
-  padding: 80px 50px;
-}
       font-family: Arial;
       margin: 0;
       background: #0f172a;
       color: white;
     }
-    section {
-      padding: 50px;
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #020617;
+      padding: 15px;
+      text-align: right;
     }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 50px;
+    }
+
     h1, h2 {
       color: #38bdf8;
     }
+
     .card {
       background: #1e293b;
       padding: 20px;
       margin: 10px 0;
       border-radius: 10px;
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
   </style>
 </head>
 
 <body>
 
-<section>
-  <h1>Hi, I'm G.LAASYA </h1>
+<!-- ✅ NAVBAR -->
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#skills">SKILLS</a>
+  <a href="#projects">PROJECTS</a>
+  <a href="#certifications">CERTS</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<!-- ✅ HOME -->
+<section id="home">
+  <h1>Hi, I'm G. LAASYA 👋</h1>
   <p>UI/UX Designer | AI Enthusiast | Problem Solver</p>
 </section>
 
-<section>
+<!-- ✅ ABOUT -->
+<section id="about">
   <h2>About Me</h2>
-  <p> I'm a B.Tech CSE student at BV Raju Institute of Technology, passionate about building intelligent and user-friendly web applications.
+  <p>
+    I'm a B.Tech CSE student at BV Raju Institute of Technology, passionate about building intelligent and user-friendly web applications.
     With a strong academic record (CGPA 8.89/10) and hands-on experience in full-stack development and AI, I love turning complex ideas into clean, working products.
-Beyond coding, I enjoy competitive programming, exploring emerging technologies, and expressing creativity through mandala art.
-    I've participated in national-level technical events, sharpening both my problem-solving and presentation skills.</p>
+    Beyond coding, I enjoy competitive programming, exploring emerging technologies, and expressing creativity through mandala art.
+  </p>
 </section>
 
-<section>
+<!-- ✅ PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="card">
     <h3>Mitra – AI Assistant</h3>
     <p>Indic language assistant using Dify + HuggingFace</p>
   </div>
+
   <div class="card">
-    <h3> Exploration of machine learning using rice crop disease detection</h3>
-    <p>Identifies wthe type of diease using images of crop</p>
+    <h3>Rice Crop Disease Detection</h3>
+    <p>Identifies type of disease using crop images</p>
   </div>
 
   <div class="card">
-    <h3>AI Disaster Response and coordination Hub</h3>
-    <p>ML-based disaster prediction and rescue </p>
+    <h3>AI Disaster Response Hub</h3>
+    <p>ML-based disaster prediction and rescue planning</p>
   </div>
 
 </section>
 
-<section>
+<!-- ✅ SKILLS -->
+<section id="skills">
   <h2>Skills</h2>
-  <p>Python,C, C++, UI/UX, Figma, AI/ML,Team management</p>
+  <p>Python, C, C++, UI/UX, Figma, AI/ML, Team Management</p>
 </section>
 
-
-<section>
+<!-- ✅ CERTIFICATIONS -->
+<section id="certifications">
   <h2>Certifications</h2>
-  <ul>
-    <li>Google UX Design Certificate</li>
-    <li>Salesforce Certified Agent force Specialist </li>
-    <li>Microsoft Certified: Azure AI Fundamentals</li>
-  </ul>
+  <p>
+    Google UX Design Certificate <br>
+    Salesforce Certified Agentforce Specialist <br>
+    Microsoft Certified: Azure AI Fundamentals
+  </p>
 </section>
-  
-<section>
+
+<!-- ✅ CONTACT -->
+<section id="contact">
   <h2>Contact</h2>
-  <p>Mobile:7659025551</p>
+  <p>Mobile: 7659025551</p>
   <p>Email: laasyagongula@gmail.com</p>
 </section>
 
