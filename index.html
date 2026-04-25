@@ -2,129 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
   <title>Laasya Reddy Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    <style>
-    .about-container {
-  max-width: 700px;
-  margin-left: 0;   /* keeps it left */
-}
-
-.about-container p {
-  line-height: 1.8;
-  font-size: 16px;
-}
-    .about-container {
-  max-width: 700px;
-  margin-left: 50px;
-}
-  html {
-    scroll-behavior: smooth;
-  }
-    .hero-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-    .highlight {
-  color: #38bdf8;
-}
-    .hero-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-  body {
-    font-family: Arial;
-    margin: 0;
-    background: #0f172a;
-    color: white;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #020617;
-    padding: 15px;
-    text-align: right;
-  }
-
-  nav a {
-    color: #38bdf8;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  section {
-    padding: 80px 50px;
-  }
-
-  h1, h2 {
-    color: #38bdf8;
-  }
-    h2 {
-  text-align: center;
-  color: #38bdf8;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-    h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #38bdf8;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-    h2 {
-  font-family: 'Poppins', sans-serif;
-}
-    h2 {
-  text-align: center;
-  font-size: 32px;
-  background: linear-gradient(90deg, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-  /* ✅ PASTE HERE */
-  .card {
-    background: #1e293b;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border-left: 4px solid #38bdf8;
-  }
-
-  /* ✅ OPTIONAL (hover effect) */
-  .card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
-  }
-
-</style>
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial;
       margin: 0;
+      font-family: 'Poppins', sans-serif;
       background: #0f172a;
       color: white;
+      padding-top: 70px;
     }
 
+    /* NAVBAR */
     nav {
       position: fixed;
       top: 0;
@@ -138,29 +34,117 @@
       color: #38bdf8;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
+    /* SECTIONS */
     section {
-      padding: 80px 50px;
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    h1, h2 {
-      color: #38bdf8;
+    /* HEADINGS */
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .card {
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      margin: 10px auto;
+    }
+
+    /* HERO */
+    #home {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* STATS */
+    .stats-container {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .stat-box {
       background: #1e293b;
       padding: 20px;
-      margin: 10px 0;
       border-radius: 10px;
+      width: 120px;
     }
+
+    .stat-box h2 {
+      margin: 0;
+      font-size: 28px;
+      color: #38bdf8;
+      -webkit-text-fill-color: unset;
+    }
+
+    /* ABOUT */
+    .about-container {
+      max-width: 700px;
+    }
+
+    .about-container p {
+      line-height: 1.8;
+    }
+
+    /* PROJECTS GRID */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #38bdf8;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* CERTIFICATIONS GRID */
+    #certifications {
+      text-align: center;
+    }
+
+    #certifications .card {
+      display: inline-block;
+      width: 250px;
+      margin: 10px;
+    }
+
   </style>
 </head>
 
 <body>
 
-<!-- ✅ NAVBAR -->
+<!-- NAVBAR -->
 <nav>
   <a href="#home">HOME</a>
   <a href="#about">ABOUT</a>
@@ -170,23 +154,23 @@
   <a href="#contact">CONTACT</a>
 </nav>
 
-<!-- ✅ HOME -->
+<!-- HERO -->
 <section id="home">
-  <h1>Hi, I'm G. LAASYA 👋</h1>
+  <h1 class="hero-title">Hi, I'm LAASYA 👋</h1>
   <p>UI/UX Designer | AI Enthusiast | Problem Solver</p>
 </section>
-  <section id="stats">
+
+<!-- STATS -->
+<section id="stats">
   <div class="stats-container">
     <div class="stat-box">
       <h2>8.89</h2>
       <p>CGPA</p>
     </div>
-
     <div class="stat-box">
       <h2>3+</h2>
       <p>Projects</p>
     </div>
-
     <div class="stat-box">
       <h2>10+</h2>
       <p>Certifications</p>
@@ -194,9 +178,9 @@
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-
   <div class="about-container">
     <p>
       I'm a B.Tech CSE student at BV Raju Institute of Technology, passionate about building intelligent and user-friendly web applications.
@@ -204,62 +188,48 @@
       Beyond coding, I enjoy competitive programming, exploring emerging technologies, and expressing creativity through mandala art.
     </p>
   </div>
-
 </section>
 
-<!-- ✅ PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Mitra – AI Assistant</h3>
-    <p>Indic language assistant using Dify + HuggingFace</p>
-  </div>
-
-  <div class="card">
-    <h3>Rice Crop Disease Detection</h3>
-    <p>Identifies type of disease using crop images</p>
-  </div>
-
-  <div class="card">
-    <h3>AI Disaster Response Hub</h3>
-    <p>ML-based disaster prediction and rescue planning</p>
-  </div>
-
-</section>
-
-<!-- ✅ SKILLS -->
+<!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
   <p>Python, C, C++, UI/UX, Figma, AI/ML, Team Management</p>
 </section>
 
-<section id="certifications">
-  <h2>Certifications</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
-  <div class="card">
-    Google UX Design Certificate
-  </div>
+  <div class="projects-container">
+    <div class="card">
+      <h3>Mitra – AI Assistant</h3>
+      <p>Indic language assistant using Dify + HuggingFace</p>
+    </div>
 
-  <div class="card">
-    Salesforce Certified Agentforce Specialist
-  </div>
+    <div class="card">
+      <h3>Rice Crop Disease Detection</h3>
+      <p>Identifies disease using crop images</p>
+    </div>
 
-  <div class="card">
-    Microsoft Certified: Azure AI Fundamentals
+    <div class="card">
+      <h3>AI Disaster Response Hub</h3>
+      <p>ML-based disaster prediction and rescue planning</p>
+    </div>
   </div>
-  <div class="card">
-    Artificial Intelligence Primer Certification-INFOSYSSPRINGBOARD
-  </div>
-  <div class="card">
-    Advanced Programming in C++ Certificate
-  </div>
- 
-  
 
 </section>
 
-<!-- ✅ CONTACT -->
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+
+  <div class="card">Google UX Design Certificate</div>
+  <div class="card">Salesforce Certified Agentforce Specialist</div>
+  <div class="card">Microsoft Certified: Azure AI Fundamentals</div>
+
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <p>Mobile: 7659025551</p>
